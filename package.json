@@ -1,5 +1,6 @@
 {
   "name": "star-rating",
+  "private": false,
   "homepage": "https://olgamozejko.github.io/star_raiting/",
   "version": "0.0.0",
   "type": "module",
