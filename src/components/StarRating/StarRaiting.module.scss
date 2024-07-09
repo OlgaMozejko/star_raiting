@@ -1,0 +1,86 @@
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 50pt;
+  z-index: 1;
+
+  &.small {
+    svg {
+      height: 1.2rem;
+      width: 1.2rem;
+    }
+  }
+
+  &.medium {
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  &.large {
+    svg {
+      height: 2.6rem;
+      width: 2.6rem;
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    &.small {
+      svg {
+        height: 1.8rem;
+        width: 1.8rem;
+      }
+    }
+
+    &.medium {
+      svg {
+        height: 2.4rem;
+        width: 2.4rem;
+      }
+    }
+
+    &.large {
+      svg {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+  }
+
+  &.is_interactive {
+    cursor: pointer;
+  }
+
+  &.is_disabled {
+    cursor: not-allowed;
+  }
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.star {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
